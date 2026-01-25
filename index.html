@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>ScoreMirage - Extension Mozaïk-Portail | 100% Gratuit</title>
+    <meta name="description" content="Extension de navigateur gratuite pour modifier et masquer le contenu des notes, absences, devoirs et messages sur Mozaïk-Portail Parents. 100% gratuit et open-source. Compatible Chrome, Firefox, Edge, Opera, Brave, Safari.">
+    <meta name="keywords" content="ScoreMirage, Mozaïk-Portail, extension navigateur, modification notes, masquer absences, extension Chrome, extension Firefox">
+    <meta name="author" content="benzoXdev">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ScoreMirage - Extension Professionnelle pour Mozaïk-Portail">
+    <meta property="og:description" content="Extension de navigateur gratuite pour modifier et masquer le contenu des notes, absences, devoirs et messages sur Mozaïk-Portail Parents. 100% gratuit et open-source.">
+    <meta property="og:url" content="https://scoremirage.com">
+    <meta property="og:site_name" content="ScoreMirage">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ScoreMirage - Extension Professionnelle pour Mozaïk-Portail">
+    <meta name="twitter:description" content="Extension de navigateur gratuite pour modifier et masquer le contenu des notes, absences, devoirs et messages sur Mozaïk-Portail Parents. 100% gratuit et open-source.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "ScoreMirage",
+        "applicationCategory": "BrowserExtension",
+        "operatingSystem": "Chrome, Firefox, Edge, Opera, Brave, Vivaldi, Safari",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CAD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250"
+        },
+        "description": "Extension de navigateur gratuite pour modifier et masquer le contenu des notes, absences, devoirs et messages sur Mozaïk-Portail Parents.",
+        "author": {
+            "@type": "Person",
+            "name": "benzoXdev"
+        },
+        "url": "https://scoremirage.com",
+        "downloadUrl": "https://www.mediafire.com/file/glahuii3cq270a1/ScoreMirage.zip/file"
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-to-main">Aller au contenu principal</a>
+    <!-- Header -->
+    <header id="main-header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <div class="logo-glow"></div>
+                    <span>ScoreMirage</span>
+                    <span class="version-badge">v3.4.9</span>
+                </a>
+                <nav class="nav-desktop">
+                    <a href="#features">Fonctionnalités</a>
+                    <a href="#pricing">Téléchargement</a>
+                    <a href="#testimonials">Témoignages</a>
+                    <a href="#comparison">Comparaison</a>
+                    <a href="#changelog">Nouveautés</a>
+                    <a href="#faq">FAQ</a>
+                    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Basculer le thème">
+                        <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="https://www.mediafire.com/file/glahuii3cq270a1/ScoreMirage.zip/file" target="_blank" rel="noopener noreferrer" download class="btn-nav-download">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Télécharger
+                    </a>
+                </nav>
+                <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#features">Fonctionnalités</a>
+            <a href="#pricing">Téléchargement</a>
+            <a href="#testimonials">Témoignages</a>
+            <a href="#comparison">Comparaison</a>
+            <a href="#changelog">Nouveautés</a>
+            <a href="#faq">FAQ</a>
+            <button type="button" class="theme-toggle mobile-theme-toggle" id="mobile-theme-toggle" aria-label="Basculer le thème">
+                <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <span>Thème</span>
+            </button>
+            <a href="https://www.mediafire.com/file/glahuii3cq270a1/ScoreMirage.zip/file" target="_blank" rel="noopener noreferrer" download class="mobile-download-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Télécharger
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="main-content">
+    <section class="hero">
+        <div class="stars-container">
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+            <span class="star"></span>
+        </div>
+        <div class="grid-pattern"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    <span>Rejoignez <strong id="user-count">10,000+</strong> utilisateurs qui font confiance à ScoreMirage</span>
+                </div>
+                <div class="browser-marquee-container">
+                    <div class="browser-marquee">
+                        <div class="browser-marquee-track">
+                            <!-- Première série -->
+                            <div class="browser-logo-item" title="Google Chrome">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg" alt="Chrome" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Chrome</span>
+                            </div>
+                            <div class="browser-logo-item" title="Mozilla Firefox">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/firefox.svg" alt="Firefox" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Firefox</span>
+                            </div>
+                            <div class="browser-logo-item" title="Microsoft Edge">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftedge.svg" alt="Edge" class="browser-logo">
+                                <span>Edge</span>
+                            </div>
+                            <div class="browser-logo-item" title="Opera">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opera.svg" alt="Opera" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Opera</span>
+                            </div>
+                            <div class="browser-logo-item" title="Brave">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/brave.svg" alt="Brave" class="browser-logo">
+                                <span>Brave</span>
+                            </div>
+                            <div class="browser-logo-item" title="Vivaldi">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vivaldi.svg" alt="Vivaldi" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Vivaldi</span>
+                            </div>
+                            <div class="browser-logo-item" title="Safari">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/safari.svg" alt="Safari" class="browser-logo">
+                                <span>Safari</span>
+                            </div>
+                            <div class="browser-logo-item" title="Arc Browser">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arc.svg" alt="Arc" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Arc</span>
+                            </div>
+                            <div class="browser-logo-item" title="Tor Browser">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/torbrowser.svg" alt="Tor" class="browser-logo">
+                                <span>Tor</span>
+                            </div>
+                            <div class="browser-logo-item" title="DuckDuckGo Browser">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/duckduckgo.svg" alt="DuckDuckGo" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>DuckDuckGo</span>
+                            </div>
+                            <!-- Duplication pour effet infini sans coupure -->
+                            <div class="browser-logo-item" title="Google Chrome">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googlechrome.svg" alt="Chrome" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Chrome</span>
+                            </div>
+                            <div class="browser-logo-item" title="Mozilla Firefox">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/firefox.svg" alt="Firefox" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Firefox</span>
+                            </div>
+                            <div class="browser-logo-item" title="Microsoft Edge">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftedge.svg" alt="Edge" class="browser-logo">
+                                <span>Edge</span>
+                            </div>
+                            <div class="browser-logo-item" title="Opera">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/opera.svg" alt="Opera" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Opera</span>
+                            </div>
+                            <div class="browser-logo-item" title="Brave">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/brave.svg" alt="Brave" class="browser-logo">
+                                <span>Brave</span>
+                            </div>
+                            <div class="browser-logo-item" title="Vivaldi">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vivaldi.svg" alt="Vivaldi" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Vivaldi</span>
+                            </div>
+                            <div class="browser-logo-item" title="Safari">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/safari.svg" alt="Safari" class="browser-logo">
+                                <span>Safari</span>
+                            </div>
+                            <div class="browser-logo-item" title="Arc Browser">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/arc.svg" alt="Arc" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>Arc</span>
+                            </div>
+                            <div class="browser-logo-item" title="Tor Browser">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/torbrowser.svg" alt="Tor" class="browser-logo">
+                                <span>Tor</span>
+                            </div>
+                            <div class="browser-logo-item" title="DuckDuckGo Browser">
+                                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/duckduckgo.svg" alt="DuckDuckGo" class="browser-logo" loading="lazy" width="40" height="40">
+                                <span>DuckDuckGo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="hero-title" data-text="ScoreMirage Extension Professionnelle pour Mozaïk-Portail">
+                    ScoreMirage<br>
+                    <span class="gradient-text">Extension Professionnelle pour Mozaïk-Portail</span>
+                </h1>
+                <p class="hero-description">
+                    Extension de navigateur gratuite, open-source et compatible avec tous les navigateurs (Chrome, Edge, Firefox, Opera, Brave, Vivaldi, Safari).
+                    Modifiez ou masquez le contenu des notes, absences, retards, devoirs et messages sur Mozaïk-Portail Parents.
+                    100% local : aucune donnée envoyée, modifications persistantes et compatibilité SPA via MutationObserver.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://www.mediafire.com/file/glahuii3cq270a1/ScoreMirage.zip/file" target="_blank" rel="noopener noreferrer" download class="btn btn-primary">
+                        Télécharger gratuitement
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        Voir les points techniques
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Fonctionnalités Premium</span>
+                <h2 class="section-title">
+                    Modifiez ou masquez tout le <span class="text-primary">contenu</span>
+                </h2>
+                <p class="section-description">
+                    ScoreMirage offre une suite complète de fonctionnalités pour personnaliser votre expérience sur Mozaïk-Portail.
+                    Modifiez ou masquez le contenu des notes, absences, retards, devoirs et messages avec un rendu instantané.
+                    Pré-configuré et prêt à l'emploi, l'extension fonctionne immédiatement après l'installation, sans configuration complexe.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg>
+                    </div>
+                    <h3>Modification automatique des notes</h3>
+                    <p>Détection automatique des notes avec support multi-formats (15/20, 75%, lettres).
+                    Mode réaliste intelligent pour des résultats crédibles et cohérents. Édition manuelle possible,
+                    sauvegarde locale et réapplication automatique, même sur pages SPA.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Modification et masquage des absences</h3>
+                    <p>Modification complète des absences et retards avec personnalisation du texte affiché.
+                    Masquage sélectif, gestion séparée des absences prévues et de l'historique,
+                    et affichage personnalisé "Pas d'absences" si souhaité. Persistance après rafraîchissement.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Modification et masquage des devoirs et messages</h3>
+                    <p>Modification et masquage des devoirs, leçons et messages avec personnalisation du texte.
+                    Interface à onglets moderne, rapide et responsive, contrôle granulaire par élément,
+                    et sauvegarde locale avec réapplication automatique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Avantages techniques</span>
+                <h2 class="section-title">
+                    Pourquoi choisir <span class="text-primary">ScoreMirage</span>
+                </h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Compatibilité universelle</h3>
+                        <p>Fonctionne sur tous les navigateurs : Chrome, Edge, Firefox, Opera, Brave, Vivaldi et plus encore.
+                        Installation simple en mode développeur, aucune configuration complexe requise.
+                        Compatible avec les applications SPA grâce au MutationObserver.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Pré-configuré et prêt à l'emploi</h3>
+                        <p>Extension pré-configurée pour fonctionner immédiatement sans configuration manuelle.
+                        Sélecteurs optimisés par défaut, mode réaliste activé, filtrage par élève et matière.
+                        Application immédiate sans rechargement de page requis.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Persistance et fiabilité</h3>
+                        <p>Chaque modification est sauvegardée localement avec un identifiant unique,
+                        puis réappliquée automatiquement après rafraîchissement ou changement d'onglet.
+                        Résultat stable, sans perte de réglages.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Confidentialité et transparence</h3>
+                        <p>100% local : aucune donnée envoyée, aucun suivi, aucune collecte.
+                        Code open-source vérifiable et stockage sécurisé dans votre navigateur.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Performance et légèreté</h3>
+                        <p>Modifications locales instantanées, sans appels externes pour l'édition.
+                        Impact minimal sur la navigation et chargement fluide, même sur pages longues.</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Contrôle total et réversible</h3>
+                        <p>Activez, ajustez ou masquez chaque élément en quelques clics.
+                        Vous pouvez revenir à l'affichage d'origine en désactivant l'extension.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Téléchargement</span>
+                <h2 class="section-title">
+                    Téléchargez <span class="text-primary">gratuitement</span>
+                </h2>
+                <p class="section-description">
+                    ScoreMirage est 100% gratuit, open-source et vérifiable. Installation en 2 minutes, aucune inscription,
+                    aucune collecte de données. Téléchargez l'extension et personnalisez votre expérience immédiatement.
+                </p>
+            </div>
+            <div class="download-card">
+                <div class="download-header">
+                    <div class="download-icon">🎁</div>
+                    <div class="download-title-section">
+                        <h3>ScoreMirage - 100% Gratuit</h3>
+                        <p class="download-subtitle">Extension gratuite et open-source pour modifier et masquer le contenu sur Mozaïk-Portail Parents, avec stockage local et confidentialité totale.</p>
+                    </div>
+                </div>
+                <div class="download-content">
+                    <ul class="download-features">
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>100% Gratuit</strong> - Aucun paiement requis</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Open-source</strong> - Code disponible sur GitHub</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Aucune inscription</strong> - Utilisation immédiate</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Données locales</strong> - Rien n'est envoyé</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Installation en 2 minutes</strong> - Mode développeur simple</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Compatibilité SPA</strong> - Réapplication automatique</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Toutes les fonctionnalités incluses</strong> - Aucune limitation</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Modification complète</strong> - Notes, absences, devoirs</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Masquage complet</strong> - Contrôle total sur l'affichage</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Support communautaire</strong> - Aide disponible sur GitHub</span>
+                        </li>
+                        <li>
+                            <span class="feature-icon">✓</span>
+                            <span class="feature-text"><strong>Mises à jour gratuites</strong> - Améliorations continues</span>
+                        </li>
+                    </ul>
+                    <div class="download-action">
+                        <a href="https://www.mediafire.com/file/glahuii3cq270a1/ScoreMirage.zip/file" target="_blank" rel="noopener noreferrer" download class="btn btn-primary btn-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Télécharger maintenant
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="installation-instructions">
+                <h3>Instructions d'installation</h3>
+                <div class="instructions-grid">
+                    <div class="instruction-card">
+                        <h4>Chrome / Edge / Brave</h4>
+                        <ol>
+                            <li>Ouvrez <code>chrome://extensions/</code></li>
+                            <li>Activez le "Mode développeur"</li>
+                            <li>Cliquez sur "Charger l'extension non empaquetée"</li>
+                            <li>Sélectionnez le dossier de l'extension</li>
+                        </ol>
+                    </div>
+                    <div class="instruction-card">
+                        <h4>Firefox</h4>
+                        <ol>
+                            <li>Ouvrez <code>about:debugging</code></li>
+                            <li>Cliquez sur "Ce Firefox"</li>
+                            <li>Cliquez sur "Charger un module complémentaire temporaire"</li>
+                            <li>Sélectionnez le fichier <code>manifest.json</code></li>
+                        </ol>
+                    </div>
+                    <div class="instruction-card">
+                        <h4>Opera / Vivaldi</h4>
+                        <ol>
+                            <li>Ouvrez <code>chrome://extensions/</code></li>
+                            <li>Activez le "Mode développeur"</li>
+                            <li>Cliquez sur "Charger l'extension non empaquetée"</li>
+                            <li>Sélectionnez le dossier de l'extension</li>
+                        </ol>
+                    </div>
+                    <div class="instruction-card">
+                        <h4>Safari</h4>
+                        <ol>
+                            <li>Ouvrez Safari et allez dans Préférences → Extensions</li>
+                            <li>Cochez "Développement" dans la barre de menu</li>
+                            <li>Dans le menu Développement, sélectionnez "Autoriser les extensions non signées"</li>
+                            <li>Ouvrez le Terminal et naviguez vers le dossier de l'extension</li>
+                            <li>Exécutez <code>xcrun safari-web-extension-converter .</code></li>
+                            <li>Ouvrez le projet Xcode généré et compilez l'extension</li>
+                            <li>Activez l'extension dans Safari → Préférences → Extensions</li>
+                        </ol>
+                        <p class="instruction-note">Note : Safari nécessite Xcode et macOS pour le développement d'extensions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Démonstration</span>
+                <h2 class="section-title">
+                    Voir <span class="text-primary">ScoreMirage</span> en action
+                </h2>
+                <p class="section-description">
+                    Découvrez une interface moderne, des modifications instantanées et un contrôle précis.
+                    Tout est local, fluide et pensé pour une utilisation professionnelle.
+                </p>
+            </div>
+            <div class="demo-container">
+                <div class="demo-placeholder">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="9" y1="9" x2="15" y2="9"></line>
+                        <line x1="9" y1="12" x2="15" y2="12"></line>
+                        <line x1="9" y1="15" x2="13" y2="15"></line>
+                    </svg>
+                    <p>Aperçu de l'extension</p>
+                    <span class="demo-note">Ajoutez votre capture d'écran ou une vidéo courte ici</span>
+                </div>
+                <div class="demo-features">
+                    <div class="demo-feature-item">
+                        <div class="demo-icon">✓</div>
+                        <div>
+                            <h4>Édition en temps réel</h4>
+                            <p>Les changements s'appliquent immédiatement, sans rechargement</p>
+                        </div>
+                    </div>
+                    <div class="demo-feature-item">
+                        <div class="demo-icon">✓</div>
+                        <div>
+                            <h4>Contrôle granulaire</h4>
+                            <p>Modifiez, masquez ou restaurez chaque élément en un clic</p>
+                        </div>
+                    </div>
+                    <div class="demo-feature-item">
+                        <div class="demo-icon">✓</div>
+                        <div>
+                            <h4>Fiabilité locale</h4>
+                            <p>Sauvegarde locale et réapplication automatique via MutationObserver</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Témoignages</span>
+                <h2 class="section-title">
+                    Ce que disent nos <span class="text-primary">clients</span>
+                </h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"ScoreMirage a complètement transformé notre expérience sur Mozaïk-Portail. L'extension est
+                        incroyablement facile à installer et fonctionne parfaitement dès le premier lancement.
+                        La modification du contenu des notes, absences et messages nous donne un contrôle total.
+                        La possibilité de personnaliser chaque élément individuellement est exceptionnelle."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <div class="author-name">Sophie Martin</div>
+                            <div class="author-role">Directrice Marketing</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Extension remarquable ! La possibilité de modifier le contenu des absences, retards et devoirs
+                        est révolutionnaire. L'interface est moderne et intuitive, le mode nuit est parfait pour
+                        les sessions prolongées. La compatibilité avec tous les navigateurs et la persistance des
+                        modifications en font un outil indispensable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JD</div>
+                        <div>
+                            <div class="author-name">Jean Dubois</div>
+                            <div class="author-role">CTO</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"La meilleure extension pour Mozaïk-Portail ! Le mode réaliste pour les notes est génial,
+                        les modifications sont crédibles et persistantes. Pouvoir modifier le contenu des messages,
+                        absences et devoirs avec personnalisation complète est incroyable. Compatible Vue.js,
+                        tout fonctionne parfaitement sans rechargement."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">ML</div>
+                        <div>
+                            <div class="author-name">Marie Laurent</div>
+                            <div class="author-role">Chef de projet</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Questions fréquentes</h2>
+            </div>
+            <div class="faq-list" id="faq-list">
+                <details class="faq-item">
+                    <summary>
+                        Comment puis-je commencer ?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </summary>
+                    <p>ScoreMirage est 100% gratuit et open-source. Téléchargez l'extension depuis GitHub,
+                    puis installez-la en mode développeur dans votre navigateur. L'extension fonctionne immédiatement
+                    après l'installation, sans activation ni clé requise.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        Puis-je changer de formule plus tard ?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </summary>
+                    <p>ScoreMirage est 100% gratuit ! Il n'y a pas d'abonnement, pas de paiement, pas de version premium.
+                    Toutes les fonctionnalités sont disponibles dès l'installation. L'extension est open-source et disponible sur GitHub.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        Mes données sont-elles sécurisées ?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </summary>
+                    <p>Toutes les modifications sont stockées localement dans votre navigateur via chrome.storage.local.
+                    Aucune donnée n'est envoyée à des serveurs externes, et aucun suivi n'est effectué.
+                    Vos modifications restent privées et sécurisées sur votre appareil uniquement.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        Puis-je modifier le contenu des absences, devoirs et messages ?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </summary>
+                    <p>Oui ! ScoreMirage permet de modifier complètement le contenu des notes, absences, retards, devoirs et messages.
+                    Vous pouvez personnaliser le texte affiché pour chaque élément individuellement, ou simplement les masquer.
+                    Toutes les modifications sont persistantes et réappliquées automatiquement après un rafraîchissement.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        Comment fonctionne la modification de contenu ?
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="m6 9 6 6 6-6"></path>
+                        </svg>
+                    </summary>
+                    <p>La modification de contenu fonctionne directement dans le HTML de la page, comme dans l'inspecteur du navigateur.
+                    Vous pouvez modifier le texte de chaque élément depuis l'interface à onglets. Un MutationObserver détecte
+                    les changements dynamiques (SPA) et réapplique automatiquement vos réglages après rafraîchissement.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Comparaison</span>
+                <h2 class="section-title">
+                    Pourquoi choisir <span class="text-primary">ScoreMirage</span> ?
+                </h2>
+                <p class="section-description">
+                    Découvrez pourquoi ScoreMirage est la solution la plus complète, la plus transparente et la plus fiable
+                    pour personnaliser votre expérience Mozaïk-Portail.
+                </p>
+            </div>
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Fonctionnalité</th>
+                            <th class="comparison-our">ScoreMirage</th>
+                            <th>Autres extensions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Prix</strong></td>
+                            <td class="comparison-our">✅ 100% Gratuit</td>
+                            <td>❌ Payant</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Open-source</strong></td>
+                            <td class="comparison-our">✅ Code disponible</td>
+                            <td>❌ Code fermé</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Données locales</strong></td>
+                            <td class="comparison-our">✅ Stockage local sécurisé</td>
+                            <td>⚠️ Cloud ou tracking</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sans compte</strong></td>
+                            <td class="comparison-our">✅ Aucune inscription</td>
+                            <td>⚠️ Compte requis</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Modification complète</strong></td>
+                            <td class="comparison-our">✅ Notes, absences, devoirs, messages</td>
+                            <td>⚠️ Limité</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Masquage sélectif</strong></td>
+                            <td class="comparison-our">✅ Contrôle granulaire</td>
+                            <td>⚠️ Basique</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Persistance</strong></td>
+                            <td class="comparison-our">✅ Automatique</td>
+                            <td>⚠️ Manuelle</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Compatibilité</strong></td>
+                            <td class="comparison-our">✅ Tous navigateurs</td>
+                            <td>⚠️ Chrome uniquement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mode réaliste</strong></td>
+                            <td class="comparison-our">✅ Intelligent</td>
+                            <td>❌ Non disponible</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Support Vue.js</strong></td>
+                            <td class="comparison-our">✅ MutationObserver</td>
+                            <td>❌ Non compatible</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Interface moderne</strong></td>
+                            <td class="comparison-our">✅ Design 3D</td>
+                            <td>⚠️ Basique</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mises à jour</strong></td>
+                            <td class="comparison-our">✅ Gratuites</td>
+                            <td>⚠️ Payantes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Changelog Section -->
+    <section id="changelog" class="changelog-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Nouveautés</span>
+                <h2 class="section-title">
+                    Historique des <span class="text-primary">versions</span>
+                </h2>
+                <p class="section-description">
+                    Découvrez les dernières améliorations et nouvelles fonctionnalités de ScoreMirage.
+                </p>
+            </div>
+            <div class="changelog-timeline">
+                <div class="changelog-item">
+                    <div class="changelog-date">v3.4.9 - Janvier 2026</div>
+                    <div class="changelog-content">
+                        <h3>🎉 Version actuelle</h3>
+                        <ul>
+                            <li>✅ Interface 3D améliorée avec effets de profondeur</li>
+                            <li>✅ Nouveau système de chat AI avec réponses prédéfinies</li>
+                            <li>✅ Roue de la Fortune avec système de récompenses</li>
+                            <li>✅ Support complet Safari</li>
+                            <li>✅ Amélioration des performances et optimisations</li>
+                            <li>✅ Mode sombre/clair avec toggle</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="changelog-item">
+                    <div class="changelog-date">v3.4.0 - Décembre 2025</div>
+                    <div class="changelog-content">
+                        <h3>✨ Améliorations majeures</h3>
+                        <ul>
+                            <li>✅ Modification complète du contenu HTML</li>
+                            <li>✅ Persistance améliorée avec ID unique</li>
+                            <li>✅ Interface à onglets moderne</li>
+                            <li>✅ Mode nuit intégré</li>
+                            <li>✅ Compatibilité Vue.js SPA</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="changelog-item">
+                    <div class="changelog-date">v3.0.0 - Novembre 2025</div>
+                    <div class="changelog-content">
+                        <h3>🚀 Refonte complète</h3>
+                        <ul>
+                            <li>✅ Nouvelle architecture du code</li>
+                            <li>✅ Support multi-navigateurs étendu</li>
+                            <li>✅ Mode réaliste pour les notes</li>
+                            <li>✅ Filtrage par élève et matière</li>
+                            <li>✅ Gestion séparée des absences prévues</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="changelog-item">
+                    <div class="changelog-date">v2.0.0 - Octobre 2025</div>
+                    <div class="changelog-content">
+                        <h3>📝 Première version publique</h3>
+                        <ul>
+                            <li>✅ Modification automatique des notes</li>
+                            <li>✅ Masquage des absences et retards</li>
+                            <li>✅ Gestion des devoirs et messages</li>
+                            <li>✅ Stockage local sécurisé</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Prêt à passer au niveau supérieur ?</h2>
+                <p>Rejoignez des milliers d'utilisateurs qui ont choisi ScoreMirage pour un contrôle total,
+                une confidentialité réelle et une expérience Mozaïk-Portail plus claire.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.mediafire.com/file/glahuii3cq270a1/ScoreMirage.zip/file" target="_blank" rel="noopener noreferrer" download class="btn btn-primary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Télécharger maintenant
+                    </a>
+                    <a href="#features" class="btn btn-secondary btn-large">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        Découvrir les points clés
+                    </a>
+                </div>
+                <div class="social-share">
+                    <p>Partagez ScoreMirage</p>
+                    <div class="social-share-buttons">
+                        <a href="https://twitter.com/intent/tweet?text=ScoreMirage%20-%20Extension%20gratuite%20pour%20Mozaïk-Portail&url=https://scoremirage.com" target="_blank" class="social-share-btn twitter" aria-label="Partager sur Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                            Twitter
+                        </a>
+                        <a href="https://www.instagram.com/just._.amar_x1" target="_blank" rel="noopener noreferrer" class="social-share-btn instagram" aria-label="Partager sur Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37a4 4 0 1 1-2.37-2.37"></path>
+                                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="https://t.me/just_amar_x1" target="_blank" rel="noopener noreferrer" class="social-share-btn telegram" aria-label="Partager sur Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            Telegram
+                        </a>
+                        <button type="button" class="social-share-btn copy-link" id="copy-link-btn" aria-label="Copier le lien">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                            </svg>
+                            Copier
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span>ScoreMirage</span>
+                    </div>
+                    <p>Extension de navigateur professionnelle pour Mozaïk-Portail Parents.
+                    Modifiez ou masquez le contenu des notes, absences, retards, devoirs et messages avec une interface moderne.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Produit</h4>
+                        <a href="#features">Fonctionnalités</a>
+                        <a href="#pricing">Tarifs</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Ressources</h4>
+                        <a href="https://github.com/benzoXdev/ScoreMirage" target="_blank">GitHub</a>
+                        <a href="https://github.com/benzoXdev/ScoreMirage#readme" target="_blank">Documentation</a>
+                        <a href="https://github.com/benzoXdev/ScoreMirage/issues" target="_blank">Support</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <a href="mailto:mimarliyesca@gmail.com">Email</a>
+                        <a href="https://www.instagram.com/just._.amar_x1" target="_blank">Instagram</a>
+                        <a href="https://t.me/just_amar_x1" target="_blank">Telegram</a>
+                        <a href="https://github.com/benzoXdev" target="_blank">Développeur</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Légal</h4>
+                        <a href="#legal-modal" id="legal-link">Mentions légales</a>
+                        <a href="#legal-modal" id="terms-link">Conditions d'utilisation</a>
+                        <a href="#legal-modal" id="privacy-link">Confidentialité</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="legal-disclaimer">
+                    <p><strong>Avertissement légal :</strong> ScoreMirage est fourni "tel quel" sans garantie d'aucune sorte,
+                    expresse ou implicite. L'utilisation de cette extension se fait à vos propres risques. Nous ne garantissons
+                    pas que l'extension fonctionnera de manière ininterrompue, sans erreur ou qu'elle répondra à vos besoins
+                    spécifiques. Les résultats peuvent varier selon l'utilisation, l'environnement et les configurations.
+                    En aucun cas ScoreMirage ne pourra être tenu responsable de dommages directs, indirects, accessoires,
+                    spéciaux ou consécutifs résultant de l'utilisation ou de l'impossibilité d'utiliser cette extension.
+                    Consultez nos <a href="#legal-modal" id="legal-disclaimer-link">mentions légales complètes</a>
+                    pour plus d'informations.</p>
+                </div>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 ScoreMirage par <a href="https://github.com/benzoXdev" target="_blank" class="footer-link-primary">benzoXdev</a>. Version 3.4.9</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/benzoXdev/ScoreMirage" target="_blank" aria-label="GitHub">GitHub</a>
+                        <a href="https://www.instagram.com/just._.amar_x1" target="_blank" aria-label="Instagram">Instagram</a>
+                        <a href="https://t.me/just_amar_x1" target="_blank" aria-label="Telegram">Telegram</a>
+                        <a href="mailto:mimarliyesca@gmail.com" aria-label="Email">Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Legal Modal -->
+    <dialog id="legal-modal" class="modal legal-modal">
+        <div class="modal-content">
+            <button type="button" class="modal-close" id="legal-modal-close" aria-label="Fermer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2>Mentions Légales &amp; Conditions d'Utilisation</h2>
+            <div class="legal-content">
+                <section>
+                    <h3>1. Avertissement Général</h3>
+                    <p>ScoreMirage est fourni "tel quel" sans garantie d'aucune sorte, expresse ou implicite, y compris,
+                    mais sans s'y limiter, les garanties de qualité marchande, d'adéquation à un usage particulier,
+                    de non-contrefaçon ou d'absence de défaut.</p>
+                </section>
+
+                <section>
+                    <h3>2. Limitation de Responsabilité</h3>
+                    <p>En aucun cas ScoreMirage, ses développeurs, propriétaires ou distributeurs ne pourront être tenus
+                    responsables de dommages directs, indirects, accessoires, spéciaux, exemplaires ou consécutifs (y compris,
+                    mais sans s'y limiter, la perte de données, de profits, d'opportunités commerciales, ou l'interruption
+                    d'activité) résultant de l'utilisation ou de l'impossibilité d'utiliser cette extension, même si
+                    ScoreMirage a été informé de la possibilité de tels dommages.</p>
+                </section>
+
+                <section>
+                    <h3>3. Utilisation à Vos Propres Risques</h3>
+                    <p>L'utilisation de ScoreMirage se fait entièrement à vos propres risques. Vous reconnaissez et acceptez
+                    que vous êtes seul responsable de l'évaluation de l'adéquation de l'extension à vos besoins et de
+                    l'assurance que l'extension répond à vos exigences spécifiques.</p>
+                </section>
+
+                <section>
+                    <h3>4. Aucune Garantie de Résultats</h3>
+                    <p>Nous ne garantissons pas que ScoreMirage fonctionnera de manière ininterrompue, sans erreur,
+                    ou qu'il répondra à vos besoins spécifiques. Les performances et résultats peuvent varier selon
+                    l'utilisation, l'environnement système, les configurations et autres facteurs indépendants de notre contrôle.</p>
+                </section>
+
+                <section>
+                    <h3>5. Données et Confidentialité</h3>
+                    <p>Bien que nous mettions en œuvre des mesures de sécurité appropriées, nous ne pouvons garantir
+                    une sécurité absolue. Vous êtes responsable de la sauvegarde de vos données et de la protection
+                    de vos informations sensibles.</p>
+                </section>
+
+                <section>
+                    <h3>6. Modifications et Interruptions</h3>
+                    <p>ScoreMirage se réserve le droit de modifier, suspendre ou interrompre l'extension à tout moment
+                    sans préavis. Nous ne serons pas responsables envers vous ou tout tiers de ces modifications,
+                    suspensions ou interruptions.</p>
+                </section>
+
+                <section>
+                    <h3>7. Acceptation des Conditions</h3>
+                    <p>En utilisant ScoreMirage, vous reconnaissez avoir lu, compris et accepté ces conditions.
+                    Si vous n'acceptez pas ces conditions, vous ne devez pas utiliser l'extension.</p>
+                </section>
+
+                <section>
+                    <h3>8. Droit Applicable</h3>
+                    <p>Ces conditions sont régies par les lois en vigueur. Tout litige sera soumis à la juridiction
+                    compétente. En cas de litige, les parties s'engagent à rechercher une solution amiable avant
+                    toute action judiciaire.</p>
+                </section>
+            </div>
+            <div class="legal-acknowledgment">
+                <p><strong>Dernière mise à jour :</strong> Janvier 2025</p>
+                <p>En utilisant ScoreMirage, vous confirmez avoir lu et accepté ces conditions.</p>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Modal -->
+    <dialog id="modal" class="modal">
+        <div class="modal-content">
+            <button type="button" class="modal-close" id="modal-close" aria-label="Fermer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <h2>Téléchargez ScoreMirage gratuitement</h2>
+            <p>ScoreMirage est 100% gratuit et open-source. Téléchargez l'extension depuis GitHub et commencez à personnaliser votre expérience
+            Mozaïk-Portail en quelques minutes. Installation simple, aucune activation requise.</p>
+            <form class="modal-form">
+                <input type="email" placeholder="Votre email (optionnel)" id="modal-email">
+                <button type="submit" class="btn btn-primary btn-block" onclick="window.open('https://github.com/benzoXdev/ScoreMirage', '_blank'); return false;">
+                    Accéder à GitHub
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                </button>
+                <p class="modal-form-note">
+                    Ou visitez directement notre dépôt GitHub pour télécharger
+                </p>
+            </form>
+        </div>
+    </dialog>
+
+    </main>
+    <!-- Chat AI Widget -->
+    <div class="chat-widget" id="chat-widget">
+        <button type="button" class="chat-toggle" id="chat-toggle" aria-label="Ouvrir le chat">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg>
+            <span class="chat-badge">1</span>
+        </button>
+        <div class="chat-window" id="chat-window">
+            <div class="chat-header">
+                <div class="chat-header-info">
+                    <div class="chat-avatar">AI</div>
+                    <div>
+                        <h3>Assistant ScoreMirage</h3>
+                        <p>En ligne</p>
+                    </div>
+                </div>
+                <button type="button" class="chat-close" id="chat-close" aria-label="Fermer le chat">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <!-- Messages will be added here -->
+            </div>
+            <div class="chat-choices" id="chat-choices">
+                <!-- Choice buttons will be added here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
