@@ -2,6 +2,8 @@
 
 https://www.mediafire.com/file/glahuii3cq270a1/ScoreMirage.zip/file
 
+# Avertissement légal : ScoreMirage est fourni "tel quel" sans garantie d'aucune sorte, expresse ou implicite. L'utilisation de cette extension se fait à vos propres risques. Nous ne garantissons pas que l'extension fonctionnera de manière ininterrompue, sans erreur ou qu'elle répondra à vos besoins spécifiques. Les résultats peuvent varier selon l'utilisation, l'environnement et les configurations. En aucun cas ScoreMirage ne pourra être tenu responsable de dommages directs, indirects, accessoires, spéciaux ou consécutifs résultant de l'utilisation ou de l'impossibilité d'utiliser cette extension. Consultez nos mentions légales complètes pour plus d'informations.
+
 # ScoreMirage
 
 Extension web pour tous les navigateurs (Chrome, Edge, Firefox, Opera, Brave, Vivaldi, etc.) qui modifie automatiquement les notes, masque les absences, devoirs et messages affichés sur le portail **Mozaïk-Portail Parents**.
